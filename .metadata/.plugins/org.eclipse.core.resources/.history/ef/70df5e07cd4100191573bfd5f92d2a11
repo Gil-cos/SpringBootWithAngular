@@ -1,0 +1,16 @@
+#spring.h2.console.enabled=true
+#spring.h2.console.path=/h2
+#
+#spring.datasource.jdbc-url=jdbc:h2:file:~/bike
+#spring.datasource.username=sa
+#spring.datasource.password=
+#spring.datasource.driver-class-name=org.h2.Driver
+
+spring.datasource.url=jdbc:mysql://localhost/bike
+spring.datasource.username=root
+spring.datasource.password=
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+
+spring.jpa.hibernate.hbm2ddl-auto=update;
+spring.jpa.show-sql=true
+spring.jpa.database-plataform=org.hibernate.dialect.MySQL5Dialect

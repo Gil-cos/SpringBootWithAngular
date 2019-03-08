@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.globomatics.bike.repositorys&apos; to &apos;com.globomatics.bike.repositories&apos;&#x0A;- Original project: &apos;bike&apos;&#x0A;- Original element: &apos;bike/src/main/java/com.globomatics.bike.repositorys&apos;&#x0A;- Renamed element: &apos;bike/src/main/java/com.globomatics.bike.repositories&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.globomatics.bike.repositorys&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java&lt;com.globomatics.bike.repositorys" name="com.globomatics.bike.repositories" qualified="false" references="true" stamp="1552065573701" textual="false" version="1.0"/>
+</session>
