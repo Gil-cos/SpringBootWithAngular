@@ -146,3 +146,19 @@ Contains: Missing mysql:mysql-connector-java:jar:sources:${mysql.connector.versi
 
 !ENTRY org.eclipse.jface.text 2 0 2019-03-08 15:07:46.262
 !MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+!SESSION 2019-03-11 08:57:16.077 -----------------------------------------------
+eclipse.buildId=4.10.0.I20181206-0815
+java.version=10.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.jface.text 2 0 2019-03-11 08:57:39.290
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jdt.launching 4 150 2019-03-11 09:32:56.241
+!MESSAGE Specified executable javaw does not exist for java-11-openjdk-amd64
+
+!ENTRY org.eclipse.jface.text 2 0 2019-03-11 10:07:31.273
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'

@@ -18,7 +18,7 @@ import com.globomatics.bike.repositories.BikeRepository;
 @RestController
 @RequestMapping("/api/v1/bikes")
 public class BikesController {
-	
+
 	@Autowired
 	private BikeRepository bikerepository;
 
@@ -26,16 +26,16 @@ public class BikesController {
 	public List<Bike> list() {
 		return bikerepository.findAll();
 	}
-	
+
 	@PostMapping
 	@ResponseStatus(HttpStatus.OK)
 	public void create(@RequestBody Bike bike) {
 		bikerepository.save(bike);
 	}
-	
+
 	@GetMapping("/{id}")
 	public Bike get(@PathVariable("id") Long id) {
-		return bikerepository.getOne(id);
+		return bikerepository.findById(id).get();
 	}
 
 }
