@@ -1,3 +1,0 @@
-spring.jpa.database-platform=org.hibernate.dialect.SQLiteDialect
-spring.jpa.hibernate.ddl-auto=none
-s\u0155ing.jpa.show-sql=true

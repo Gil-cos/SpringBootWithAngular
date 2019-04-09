@@ -1,0 +1,5 @@
+package com.globomatics.bike.config;
+
+public class SecurityConfiguration {
+
+}

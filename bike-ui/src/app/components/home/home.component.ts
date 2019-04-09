@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { BikeService } from '../../services/bike.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { Observable } from 'rxjs';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,6 @@ import { Observable } from 'rxjs';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
   models: string[] = [
     'Globo MTB 29 Full Suspension',
     'Globo Carbon Fiber Race Series',
@@ -17,7 +16,6 @@ export class HomeComponent implements OnInit {
   ];
   bikeform: FormGroup;
   validMessage: string = "";
-
 
   constructor(private bikeService: BikeService) { }
 
@@ -30,13 +28,14 @@ export class HomeComponent implements OnInit {
       serialNumber: new FormControl('', Validators.required),
       purchasePrice: new FormControl('', Validators.required),
       purchaseDate: new FormControl('', Validators.required),
-      contact: new FormControl(),
+      contact: new FormControl()
     });
   }
 
   submitRegistration() {
+
     if (this.bikeform.valid) {
-      this.validMessage = "Your bike registration has been submitted. Thank you!!!";
+      this.validMessage = "Your bike registration has been submitted. Thank you!";
       this.bikeService.createBikeRegistration(this.bikeform.value).subscribe(
         data => {
           this.bikeform.reset();
@@ -47,9 +46,8 @@ export class HomeComponent implements OnInit {
         }
       )
     } else {
-      this.validMessage = "Please fill out the form before submitting!!!";
+      this.validMessage = "Please fill out the form before submitting!";
     }
   }
 
-  
 }
